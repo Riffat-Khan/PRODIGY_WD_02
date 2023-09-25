@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Stopwatch</title>
+</head>
+
+<body class="bg-cover bg-center bg-no-repeat font-serif flex flex-col justify-center m-0 h-screen items-center" style="background-image: url(bgg.jpg);">
+    <main class="relative z-1 bg-black pl-10 pr-10 pb-5 pt-2 rounded-3xl shadow-black shadow-lg">
+        <span class="text-white mt-5 -ml-5 text-lg" id="clock"></span>
+        <span class="text-white"><ion-icon name="logo-whatsapp"></ion-icon></span>
+        <span class="text-white"><ion-icon name="logo-snapchat"></ion-icon></span>
+        <span class="text-white mr-28"><ion-icon name="logo-instagram"></ion-icon></ion-icon></span>
+        <span class="text-white"><ion-icon name="wifi-outline"></ion-icon></ion-icon></span>
+        <span class="text-white"><ion-icon name="battery-half-outline"></ion-icon></span>
+        <p class="text-white text-center mt-20 underline text-lg">Stopwatch</p>
+        <div class="text-center p-5 mt-10 pt-24 pb-24 rounded-full bg-cyan-600 shadow-cyan-800 shadow-lg">
+            <div class="stopwatch text-3xl">00:00:00</div>
+        </div>
+        <div class="inline-block text-center mt-14 mr-20 ml-5 bg-cyan-800 p-3 rounded-xl text-lg hover:bg-sky-600" id="startStop">
+            <button>Start</button>
+        </div>
+        <div class="inline-block text-center mt-14 bg-cyan-800 p-3 rounded-xl text-lg hover:bg-sky-600" id="reset">
+            <button>Reset</button>
+        </div>
+
+        <div class="mt-14">
+            <span class="text-white pt-96 pl-10 text-lg"><ion-icon name="stop-outline"></ion-icon></span>
+            <span class="text-white pt-96 pl-16 text-lg"><ion-icon name="radio-button-off-outline"></ion-icon></span>
+            <span class="text-white pt-96 pl-16 text-lg"><ion-icon name="play-outline"></ion-icon></span>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
